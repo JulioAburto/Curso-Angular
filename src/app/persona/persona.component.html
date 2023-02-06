@@ -3,3 +3,10 @@
   Apellido:{{ apellido }} <br />
   Edad: {{ edad + 1 }}
 </p>
+<!-- Interpolacion asociada a los elementos html -->
+<!-- muestra los caracteres que se muestran en el input -->
+<div (keyup)="(0)">
+  <label> Repetidor</label>
+  <input #entrada />
+  {{ entrada.value }}
+</div>
