@@ -1,0 +1,26 @@
+<div class="container">
+  <h1>Calculadora de Sumar</h1>
+  <form>
+    <div class="form-group">
+      <label for="">Operando A</label>
+      <input
+        type="number"
+        placeholder="Escribe operando A"
+        class="form-control"
+        (input)="obtenerDatoA($event)"
+      />
+
+      <label for="">Operando B</label>
+      <input
+        type="number"
+        placeholder="Escribe operando B"
+        class="form-control"
+        (input)="obtenerDatoB($event)"
+      />
+      <button class="btn btn-success" type="submit" (click)="sumarOperando()">
+        Sumar
+      </button>
+      <p>Resultado: {{ suma }}</p>
+    </div>
+  </form>
+</div>
