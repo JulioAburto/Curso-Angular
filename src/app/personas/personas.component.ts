@@ -9,7 +9,7 @@ export class PersonasComponent {
   // Property Binding
   deshabilitar = false;
   mensaje = 'No se ha agregado ninguna persona';
-  titulo = '';
+  titulo = 'Ingeniero';
   agregarPersona() {
     this.mensaje = 'Persona agregada';
   }
@@ -20,3 +20,4 @@ export class PersonasComponent {
     this.titulo = (<HTMLInputElement>event.target).value;
   }
 }
+// Two way binding podemos comunicar desde el html hacia el componente o viceversa 

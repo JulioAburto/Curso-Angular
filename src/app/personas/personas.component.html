@@ -20,6 +20,10 @@
         (input)="modificarTitulo($event)"
       />
       {{ titulo }}
+      <br />
+      <label for="">Titulo Persona Two way binding</label>
+      <input type="text" class="form-control" [(ngModel)]="titulo" />
+      {{ titulo }}
     </div>
   </div>
 </div>
